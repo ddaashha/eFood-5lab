@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("Lobster/Lobster-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ysabeau_Office";
+    src: url("Ysabeau_Office/YsabeauOffice-VariableFont_wght.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+
+    --color-grey: #CEC0C0;
+    --color-brown: #461508;
+    --color-black: #000000;
+
+
+    --font-family: 'Rubik', sans-serif;;
+    --font-family-text: "Ysabeau_Office";
+    --font-size-h1: 70px;
+    --font-size-h2: 25px;
+    --font-size-h3: 27px;
+    --font-size-p: 20px;
+
+
+    --width-page: 1440px;
+    --height-page: 5791px;
+
+
+    --width-menu: 230px;
+    --height-menu: 1300px;
+
+    --width-main: 917px;
+    --height-main: 1300px;
+
+    --width-sidebar: 292px;
+    --height-sidebar: 1300px;
+
+    --height-footer: 52px;
+
+
+    --padding-left: 20px;
+    --padding-text: 50px;
+
+
+
+}

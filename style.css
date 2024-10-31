@@ -1,0 +1,426 @@
+@import url(base.css);
+@import url(reset.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(main.css);
+@import url(section2.css);
+@import url(section3.css);
+@import url(section4.css);
+@import url(section5.css);
+@import url(section6.css);
+
+body {
+    margin: auto;
+    max-width: var(--width-page);
+    max-height: var(--height-page);
+    background-color: #fff;
+    color: #363853;
+    font-family: var(--font-family);
+}
+
+@media (max-width: 550px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .cta {
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .headline {
+        font-size: 1.8em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .header1 {
+        font-size: 28px;
+    }
+
+
+    .tabs {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+        .food-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+    .image-container {
+        display: none;
+    }
+
+    .client-image {
+        display: none;
+    }
+
+
+
+
+
+    .subscribe-section {
+        padding: 30px 10px;
+        border-radius: 10px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 25px;
+    }
+
+    .subscribe-title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .subscribe-description {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .subscribe-form input[type="email"] {
+        font-size: 14px;
+        padding: 12px 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-button {
+        font-size: 16px;
+        padding: 12px 20px;
+        border-radius: 5px;
+    }
+
+
+
+
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .headline {
+        font-size: 2.6em;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .review-card,
+    .sandwich-card {
+        display: none;
+    }
+
+
+    .tabs {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .tab {
+        width: 180px;
+        font-size: 18px;
+    }
+
+    .product-grid {
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+         .food-grid {
+             grid-template-columns: repeat(2, 1fr);
+         }
+
+    .header1 {
+        font-size: 32px;
+    }
+
+    .download-buttons4 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .client-image {
+        display: none;
+    }
+
+
+    .subscribe-section {
+        padding: 30px 10px;
+        border-radius: 10px;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .subscribe-title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .subscribe-description {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .subscribe-form input[type="email"] {
+        font-size: 14px;
+        padding: 12px 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .subscribe-button {
+        font-size: 16px;
+        padding: 12px 20px;
+        border-radius: 5px;
+    }
+
+    .product-card {
+        width: 45%;
+        max-width: 250px;
+    }
+
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+@media (min-width: 700px) and (max-width: 1000px) {
+
+    .navbar {
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links {
+        flex: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .cta {
+        gap: 30px;
+    }
+
+    .headline {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .text-content {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .scooter-guy {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .review-card,
+    .sandwich-card {
+        display: none;
+    }
+
+    .popCat {
+        padding: 0 20px;
+    }
+
+    .tabs {
+        gap: 10px;
+    }
+
+    .tab {
+        width: auto;
+        flex: 45%;
+        text-align: center;
+    }
+
+    .product-grid {
+        overflow-x: hidden;
+        overflow-y: visible;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .product-card {
+        flex: 1 1 45%;
+        max-width: 300px;
+    }
+
+    .delivery-section {
+        flex-wrap: wrap;
+    }
+
+    .title2 {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info-item i {
+        margin-bottom: 10px;
+    }
+
+    .top-food-section {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .food-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .food-card img {
+        height: 200px;
+    }
+
+    .testimonial-section,
+    .download-section {
+        padding: 20px;
+    }
+
+    .testimonial-title,
+    .title4 {
+        font-size: 32px;
+    }
+
+    .testimonial-content,
+    .download-section,
+    .download-buttons4 {
+        flex-direction: column;
+    }
+
+    .testimonial-text,
+    .content4 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .client-info-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subscribe-section {
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .subscribe-title {
+        font-size: 32px;
+    }
+
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-logo,
+    .footer-links {
+        flex: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
